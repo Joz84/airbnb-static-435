@@ -1,0 +1,15 @@
+<h1>Coucou, on est content :)</h1>
+<ul>
+  <% @flats.each do |flat| %>
+    <li><%= flat["name"] %> - <%= link_to "check", flat_path(flat["id"]) %> </li>
+
+<!--     <li>
+      <%#= link_to flat_path(flat["id"]) do %>
+        <%#= flat["name"] %>
+        <br>
+        <img src="<%#= flat["imageUrl"] %>" alt="" width="300px">
+      <%# end %>
+    </li> -->
+
+  <% end %>
+</ul>
